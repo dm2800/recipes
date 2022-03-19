@@ -31,9 +31,6 @@ def dashboard():
     return render_template("dashboard.html", user = user, users = users, recipes = recipes)
 
 
-# recipes_w_user = Recipe.get_recipe_with_users(data)
-#  recipes_w_user=recipes_w_user
-
 
 @app.route('/user/register/', methods=['POST'])
 def register_user():
